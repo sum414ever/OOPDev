@@ -35,9 +35,8 @@ public class AppRunner {
 
 		logger.info("Triangle with base " + triangle2.getBase() + " and height " + triangle2.getHeight() + " has area "
 				+ triangle2.getArea());
-
-//		?
-
+		Trapezoid trapezoid = new Trapezoid();
+		
 		logger.info("Trapezoid with base " + trapezoid.getBaseA() + " and " + trapezoid.getBaseB() + " and height "
 				+ trapezoid.getHeight() + " has area " + trapezoid.getArea());
 
