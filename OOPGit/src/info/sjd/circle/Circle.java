@@ -18,6 +18,7 @@ public class Circle extends AbstractShape {
 	public int getArea() {
 		return (int) (radius * radius * Math.PI);
 	}
+	@Override
 	public int getPerimeter() {
 		return (int) (radius*Math.PI*Math.PI);
 	}

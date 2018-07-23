@@ -51,6 +51,5 @@ public class AppRunner {
 
 		logger.info("Trapezoid with base " + trapezoid2.getBaseA() + " and " + trapezoid2.getBaseB() + " and height "
 				+ trapezoid2.getHeight() + " has area " + trapezoid2.getArea());
-		
 	}
 }
