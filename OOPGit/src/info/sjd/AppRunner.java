@@ -11,60 +11,62 @@ public class AppRunner {
 	private static Logger logger = Logger.getLogger(AppRunner.class.getName());
 
 	public static void main(String[] args) {
-		
+
 		Circle circle = new Circle();
 		circle.setRadius(15);
-		
+
 		Circle circle2 = new Circle();
 		circle2.setRadius(20);
 
-		logger.info("Circle with radius " + circle.getRadius() + " has area " + circle.getArea() + " and has perimeter " + circle.getPerimeter());
-		logger.info("Circle with radius " + circle2.getRadius() + " has area " + circle2.getArea() + " and has perimeter " + circle2.getPerimeter());
-		
+		logger.info("Circle with radius " + circle.getRadius() + " has area " + circle.getArea() + " and has perimeter "
+				+ circle.getPerimeter());
+		logger.info("Circle with radius " + circle2.getRadius() + " has area " + circle2.getArea()
+				+ " and has perimeter " + circle2.getPerimeter());
 
 		Triangle triangle = new Triangle();
-		triangle.setBase(15);
+		triangle.setSide(15);
 		triangle.setHeight(14);
-		triangle.setBase2(16);
-		triangle.setBase3(18);
+		triangle.setSide2(16);
+		triangle.setSide3(18);
 
 		Triangle triangle2 = new Triangle();
-		triangle2.setBase(7);
+		triangle2.setSide(7);
 		triangle2.setHeight(8);
-		triangle2.setBase2(9);
-		triangle2.setBase3(10);
+		triangle2.setSide2(9);
+		triangle2.setSide3(10);
 
-		logger.info("Triangle with base " + triangle.getBase() + " and height " + triangle.getHeight() + " has area "
+		logger.info("Triangle with side " + triangle.getSide() + " and height " + triangle.getHeight() + " has area "
 				+ triangle.getArea());
-		logger.info("Triangle with bases " + triangle.getBase() + " , " + triangle.getBase2() + " , " + triangle.getBase3() + " has perimeter "
-				+ triangle.getPerimeter());
+		logger.info("Triangle with sides " + triangle.getSide() + " , " + triangle.getSide2() + " , "
+				+ triangle.getSide3() + " has perimeter " + triangle.getPerimeter());
 
-		logger.info("Triangle with base " + triangle2.getBase() + " and height " + triangle2.getHeight() + " has area "
+		logger.info("Triangle with side " + triangle2.getSide() + " and height " + triangle2.getHeight() + " has area "
 				+ triangle2.getArea());
-		logger.info("Triangle with bases " + triangle2.getBase() + " , " + triangle2.getBase2() + " , " + triangle2.getBase3() + " has perimeter "
-				+ triangle2.getPerimeter());
+		logger.info("Triangle with sides " + triangle2.getSide() + " , " + triangle2.getSide2() + " , "
+				+ triangle2.getSide3() + " has perimeter " + triangle2.getPerimeter());
 
-		
 		Trapezoid trapezoid = new Trapezoid();
-		trapezoid.setBaseA(5);
-		trapezoid.setBaseB(10);
-		trapezoid.setBaseC(11);
-		trapezoid.setBaseD(12);
+		trapezoid.setSideA(5);
+		trapezoid.setSideB(10);
+		trapezoid.setSideC(11);
+		trapezoid.setSideD(12);
 		trapezoid.setHeight(20);
-		
-		logger.info("Trapezoid with base " + trapezoid.getBaseA() + " and " + trapezoid.getBaseB() + " and height "
+
+		logger.info("Trapezoid with side " + trapezoid.getSideA() + " and " + trapezoid.getSideB() + " and height "
 				+ trapezoid.getHeight() + " has area " + trapezoid.getArea());
-		logger.info("Trapezoid with bases " + trapezoid.getBaseA() + " , " + trapezoid.getBaseB() + " , " + trapezoid.getBaseC() + " , " + trapezoid.getBaseD() + " has perimeter " + trapezoid.getPerimeter());
+		logger.info("Trapezoid with sides " + trapezoid.getSideA() + " , " + trapezoid.getSideB() + " , "
+				+ trapezoid.getSideC() + " , " + trapezoid.getSideD() + " has perimeter " + trapezoid.getPerimeter());
 
 		Trapezoid trapezoid2 = new Trapezoid();
-		trapezoid2.setBaseA(77);
-		trapezoid2.setBaseB(13);
-		trapezoid2.setBaseC(17);
-		trapezoid2.setBaseD(18);
+		trapezoid2.setSideA(77);
+		trapezoid2.setSideB(13);
+		trapezoid2.setSideC(17);
+		trapezoid2.setSideD(18);
 		trapezoid2.setHeight(99);
 
-		logger.info("Trapezoid with base " + trapezoid2.getBaseA() + " and " + trapezoid2.getBaseB() + " and height "
+		logger.info("Trapezoid with side " + trapezoid2.getSideA() + " and " + trapezoid2.getSideB() + " and height "
 				+ trapezoid2.getHeight() + " has area " + trapezoid2.getArea());
-		logger.info("Trapezoid with bases " + trapezoid2.getBaseA() + " , " + trapezoid2.getBaseB() + " , " + trapezoid2.getBaseC() + " , " + trapezoid2.getBaseD() + " has perimeter " + trapezoid2.getPerimeter());
+		logger.info("Trapezoid with sides " + trapezoid2.getSideA() + " , " + trapezoid2.getSideB() + " , "
+				+ trapezoid2.getSideC() + " , " + trapezoid2.getSideD() + " has perimeter " + trapezoid2.getPerimeter());
 	}
 }

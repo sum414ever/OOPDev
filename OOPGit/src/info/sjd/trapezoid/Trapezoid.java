@@ -4,46 +4,30 @@ import info.sjd.AbstractShape;
 
 public class Trapezoid extends AbstractShape {
 
-	private int BaseA;
+	private int SideA;
 
-	private int BaseB;
+	private int SideB;
 
 	private int Height;
 
-	private int BaseC;
+	private int SideC;
 
-	private int BaseD;
+	private int SideD;
 
-	public int getBaseA() {
-		return BaseA;
+	public int getSideA() {
+		return SideA;
 	}
 
-	public void setBaseA(int baseA) {
-		BaseA = baseA;
+	public void setSideA(int sideA) {
+		SideA = sideA;
 	}
 
-	public int getBaseB() {
-		return BaseB;
+	public int getSideB() {
+		return SideB;
 	}
 
-	public void setBaseB(int baseB) {
-		BaseB = baseB;
-	}
-
-	public int getBaseC() {
-		return BaseC;
-	}
-
-	public void setBaseC(int baseC) {
-		BaseC = baseC;
-	}
-
-	public int getBaseD() {
-		return BaseD;
-	}
-
-	public void setBaseD(int baseD) {
-		BaseD = baseD;
+	public void setSideB(int sideB) {
+		SideB = sideB;
 	}
 
 	public int getHeight() {
@@ -54,14 +38,30 @@ public class Trapezoid extends AbstractShape {
 		Height = height;
 	}
 
+	public int getSideC() {
+		return SideC;
+	}
+
+	public void setSideC(int sideC) {
+		SideC = sideC;
+	}
+
+	public int getSideD() {
+		return SideD;
+	}
+
+	public void setSideD(int sideD) {
+		SideD = sideD;
+	}
+
 	@Override
 	public int getArea() {
-		return (int) ((BaseA + BaseB) * Height / 2);
+		return (int) ((SideA + SideB) * Height / 2);
 	}
 
 	@Override
 	public int getPerimeter() {
-		return (int) (BaseA + BaseB + BaseC + BaseD);
+		return (int) (SideA + SideB + SideC + SideD);
 	}
 
 }
