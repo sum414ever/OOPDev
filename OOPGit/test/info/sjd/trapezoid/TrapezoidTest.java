@@ -1,4 +1,4 @@
-package info.trapezoid;
+package info.sjd.trapezoid;
 
 import static org.junit.Assert.*;
 

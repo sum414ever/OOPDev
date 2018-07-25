@@ -1,4 +1,4 @@
-package info.circle;
+package info.sjd.circle;
 
 import static org.junit.Assert.*;
 

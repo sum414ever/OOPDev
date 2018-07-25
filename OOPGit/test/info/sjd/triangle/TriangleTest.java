@@ -1,4 +1,4 @@
-package info.triangle;
+package info.sjd.triangle;
 
 import static org.junit.Assert.*;
 
