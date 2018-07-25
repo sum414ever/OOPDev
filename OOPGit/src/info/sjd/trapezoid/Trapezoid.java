@@ -8,11 +8,11 @@ public class Trapezoid extends AbstractShape {
 
 	private int SideB;
 
-	private int Height;
-
 	private int SideC;
 
 	private int SideD;
+	
+	private int Height;
 
 	public int getSideA() {
 		return SideA;
