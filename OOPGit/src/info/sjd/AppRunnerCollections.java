@@ -52,11 +52,12 @@ public class AppRunnerCollections {
 				minShape = shapes.get(i);
 			}
 
-			logger.log(Level.INFO,
-					"Shape " + maxShape.getClass().getSimpleName() + " has maximal area " + maxShape.getArea());
-
-			logger.log(Level.INFO,
-					"Shape " + minShape.getClass().getSimpleName() + " has minimal area " + minShape.getArea());
+			
 		}
+		logger.log(Level.INFO,
+				"Shape " + maxShape.getClass().getSimpleName() + " has maximal area " + maxShape.getArea());
+
+		logger.log(Level.INFO,
+				"Shape " + minShape.getClass().getSimpleName() + " has minimal area " + minShape.getArea());
 	}
 }
