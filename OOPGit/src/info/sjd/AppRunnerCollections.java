@@ -59,5 +59,37 @@ public class AppRunnerCollections {
 
 		logger.log(Level.INFO,
 				"Shape " + minShape.getClass().getSimpleName() + " has minimal area " + minShape.getArea());
+		
+		List<Shape> shapesPerimeter = new ArrayList<>();
+		shapesPerimeter.add(circle);
+		shapesPerimeter.add(trapezoid);
+		shapesPerimeter.add(triangle);
+
+		Shape maxShapePerimeter = null;
+		Shape minShapePerimeter = null;
+
+		if (!shapes.isEmpty()) {
+			maxShapePerimeter = shapesPerimeter.get(0);
+			minShapePerimeter = shapesPerimeter.get(0);
+
+		}
+		for (int i = 0; i < shapesPerimeter.size(); i++) {
+			if (maxShapePerimeter.getArea() < shapesPerimeter.get(i).getArea()) {
+				maxShapePerimeter = shapesPerimeter.get(i);
+			}
+
+			if (minShapePerimeter.getArea() > shapesPerimeter.get(i).getArea()) {
+				minShapePerimeter = shapesPerimeter.get(i);
+			}
+
+			
+		}
+		logger.log(Level.INFO,
+				"Shape " + maxShapePerimeter.getClass().getSimpleName() + " has maximal perimeter " + maxShapePerimeter.getPerimeter());
+
+		logger.log(Level.INFO,
+				"Shape " + minShapePerimeter.getClass().getSimpleName() + " has minimal perimeter " + minShapePerimeter.getArea());
+		
+		
 	}
 }
